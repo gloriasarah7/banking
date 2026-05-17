@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gloria Sarah Saragih — Banking Development Program Portfolio</title>
+  <meta name="description" content="Recruiter-facing banking development program portfolio of Gloria Sarah Saragih: UMKM credit analysis, customer segmentation, digital banking adoption, product management, data analysis, CV, certificates, and supporting documents." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --surface: #ffffff;
+      --surface-soft: #fbfaf7;
+      --ink: #20201d;
+      --muted: #64615a;
+      --line: #e6e0d6;
+      --accent: #6f725f;
+      --accent-dark: #484b3d;
+      --accent-soft: #e9eadf;
+      --gold-soft: #efe4cf;
+      --shadow: 0 18px 45px rgba(44, 42, 36, 0.08);
+      --radius-lg: 28px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --max: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #fffaf0 0, transparent 30%), var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(247, 245, 240, 0.86);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(230, 224, 214, 0.8);
+    }
+
+    .nav-inner {
+      height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      font-size: 1.05rem;
+      white-space: nowrap;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: var(--ink);
+    }
+
+    .nav-cta {
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--ink);
+      box-shadow: 0 8px 20px rgba(44, 42, 36, 0.05);
+    }
+
+    header {
+      padding: 82px 0 48px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-card,
+    .side-card,
+    .section-card,
+    .project-card,
+    .doc-card,
+    .experience-card {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      padding: 48px;
+      border-radius: var(--radius-lg);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.12;
+      margin: 0;
+      letter-spacing: -0.045em;
+    }
+
+    h1 {
+      max-width: 820px;
+      margin-top: 22px;
+      font-size: clamp(2.55rem, 6vw, 5.45rem);
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    .hero p {
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 760px;
+    }
+
+    .actions {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-weight: 800;
+      font-size: 0.94rem;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(44, 42, 36, 0.10);
+    }
+
+    .btn.primary {
+      background: var(--ink);
+      color: white;
+      border-color: var(--ink);
+    }
+
+    .btn.secondary {
+      background: var(--surface);
+      color: var(--ink);
+    }
+
+    .side-card {
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(160deg, #ffffff, #fbfaf6);
+    }
+
+    .profile-name {
+      font-size: 1.65rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      margin-bottom: 8px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 9px;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.94rem;
+    }
+
+    .fit-box {
+      margin-top: 28px;
+      padding: 18px;
+      border-radius: var(--radius-md);
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+    }
+
+    .fit-box strong {
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .stat {
+      padding: 20px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.78);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.6rem;
+      letter-spacing: -0.05em;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 54px 0;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 0.78fr 1fr;
+      gap: 28px;
+      align-items: end;
+      margin-bottom: 24px;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .section-card,
+    .project-card,
+    .doc-card,
+    .experience-card {
+      border-radius: var(--radius-md);
+      padding: 24px;
+    }
+
+    .section-card p,
+    .project-card p,
+    .doc-card p,
+    .experience-card p {
+      color: var(--muted);
+      margin: 12px 0 0;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      color: var(--accent-dark);
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .project-card.featured {
+      grid-column: span 1;
+      background: linear-gradient(180deg, #ffffff, #fbfaf6);
+    }
+
+    .meta {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .mini-metric {
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+    }
+
+    .mini-metric strong {
+      display: block;
+      font-size: 1.05rem;
+      letter-spacing: -0.03em;
+    }
+
+    .mini-metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.76rem;
+      margin-top: 3px;
+      line-height: 1.35;
+    }
+
+    .project-links,
+    .doc-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+
+    .text-link:hover {
+      background: var(--accent-soft);
+      border-color: #d6d8c6;
+    }
+
+    .experience-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .experience-card {
+      display: grid;
+      grid-template-columns: 0.34fr 1fr;
+      gap: 18px;
+      align-items: start;
+      box-shadow: none;
+      background: rgba(255,255,255,0.62);
+    }
+
+    .role-time {
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .doc-card {
+      padding: 20px;
+      min-height: 178px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: none;
+    }
+
+    .doc-card h3 {
+      font-size: 1.02rem;
+    }
+
+    .doc-card p {
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    .quote-card {
+      border-radius: var(--radius-lg);
+      padding: 34px;
+      background: var(--accent-dark);
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .quote-card p {
+      color: rgba(255,255,255,0.76);
+      margin: 12px 0 0;
+    }
+
+    footer {
+      padding: 42px 0 52px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 940px) {
+      .hero,
+      .section-head,
+      .grid-3,
+      .grid-2,
+      .stats,
+      .docs-grid,
+      .experience-card {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        padding: 34px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .metric-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: min(100% - 28px, var(--max));
+      }
+
+      header {
+        padding-top: 48px;
+      }
+
+      .hero-card,
+      .side-card,
+      .quote-card {
+        padding: 24px;
+        border-radius: 22px;
+      }
+
+      .actions,
+      .project-links,
+      .doc-links {
+        flex-direction: column;
+      }
+
+      .btn,
+      .text-link {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">Gloria Sarah <span>Banking Portfolio</span></a>
+      <div class="nav-links" aria-label="Primary navigation">
+        <a href="#fit">Fit</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#documents">Documents</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top">
+    <div class="container hero">
+      <div class="hero-card">
+        <span class="eyebrow">Banking Development Program Candidate</span>
+        <h1>Evidence-based banking portfolio for high-impact development programs.</h1>
+        <p>
+          I am a Universitas Indonesia graduate with a banking-focused portfolio in UMKM credit eligibility, customer segmentation, and digital banking adoption. This portfolio demonstrates how I approach business problems: structured analysis, clear assumptions, Excel-based modeling, stakeholder awareness, and practical recommendations that can support credit, customer growth, and banking operations.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View Banking Projects</a>
+          <a class="btn secondary" href="https://docs.google.com/document/d/1ScxM8Q7d5FvfgPhmMKEWf2h6f0_fBfltk3geoQnWIzc/edit?usp=sharing" target="_blank" rel="noopener">View CV</a>
+          <a class="btn secondary" href="#documents">Supporting Documents</a>
+        </div>
+      </div>
+
+      <aside class="side-card">
+        <div>
+          <div class="profile-name">Gloria Sarah Saragih</div>
+          <div class="contact-list">
+            <span>Bekasi, Indonesia</span>
+            <a href="mailto:gloriasarahsaragih@gmail.com">gloriasarahsaragih@gmail.com</a>
+            <a href="tel:+628115677500">+62 811 567 7500</a>
+            <a href="https://linkedin.com/in/gloriasarah" target="_blank" rel="noopener">linkedin.com/in/gloriasarah</a>
+            <a href="https://linktr.ee/gloria.sarah" target="_blank" rel="noopener">linktr.ee/gloria.sarah</a>
+          </div>
+        </div>
+        <div class="fit-box">
+          <strong>Recruiter snapshot</strong>
+          A high-learning, execution-oriented candidate with strong analytical discipline, field research exposure, stakeholder communication experience, and a clear interest in building a career in banking.
+        </div>
+      </aside>
+    </div>
+
+    <div class="container stats">
+      <div class="stat"><strong>3</strong><span>Banking analytics portfolio projects</span></div>
+      <div class="stat"><strong>320</strong><span>Simulated UMKM/customer profiles analyzed</span></div>
+      <div class="stat"><strong>3.63</strong><span>GPA · Universitas Indonesia</span></div>
+      <div class="stat"><strong>40+</strong><span>Members led in student organization</span></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="fit">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Candidate value</span>
+            <h2>Why I am a strong fit for banking development programs</h2>
+          </div>
+          <p>
+            I bring the combination recruiters look for in early-career banking talent: analytical rigor, customer and business sensitivity, disciplined execution, and the ability to communicate insights clearly across stakeholders.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="section-card">
+            <h3>Credit-oriented business judgment</h3>
+            <p>Built a rule-based UMKM credit eligibility model that connects repayment capacity, collateral coverage, business maturity, and risk signals into a clear applicant classification.</p>
+            <div class="tag-row">
+              <span class="tag">Credit scoring</span><span class="tag">Repayment capacity</span><span class="tag">UMKM</span>
+            </div>
+          </article>
+          <article class="section-card">
+            <h3>Customer growth and portfolio thinking</h3>
+            <p>Translated customer data into actionable segments, connecting revenue potential, product holding, digital engagement, churn risk, retention, and cross-sell opportunities.</p>
+            <div class="tag-row">
+              <span class="tag">Segmentation</span><span class="tag">Portfolio</span><span class="tag">Cross-sell</span>
+            </div>
+          </article>
+          <article class="section-card">
+            <h3>Digital banking adoption insight</h3>
+            <p>Analyzed adoption barriers beyond surface-level usage by distinguishing access gaps from product, trust, pricing, and behavioral frictions.</p>
+            <div class="tag-row">
+              <span class="tag">Digital banking</span><span class="tag">Adoption</span><span class="tag">Customer insight</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Portfolio evidence</span>
+            <h2>Banking projects that demonstrate readiness</h2>
+          </div>
+          <p>
+            These independent projects were built to show recruiter-visible evidence of banking business judgment, analytical ownership, spreadsheet modeling, and recommendation writing—not only interest in banking, but preparation for it.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="project-card featured">
+            <div class="meta">Independent portfolio · 2026</div>
+            <h3>UMKM Credit Eligibility Analysis</h3>
+            <p>Built a transparent rule-based credit scoring model for 100 simulated UMKM loan applications, classifying applicants into Eligible, Conditional, and Not Eligible.</p>
+            <div class="metric-row">
+              <div class="mini-metric"><strong>56</strong><span>Eligible applications</span></div>
+              <div class="mini-metric"><strong>12</strong><span>Conditional applications</span></div>
+              <div class="mini-metric"><strong>18</strong><span>Stressed repayment cases</span></div>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="https://docs.google.com/spreadsheets/d/1bjs8WfGPRPcCmg6S4Csjpv3lIxv-phS96-D9vRsCNec/edit?usp=sharing" target="_blank" rel="noopener">Open Spreadsheet</a>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="meta">Independent portfolio · 2026</div>
+            <h3>UMKM Customer Segmentation & Portfolio Analytics</h3>
+            <p>Designed a customer analytics model for 120 UMKM banking customers across revenue, fee contribution, product holding, digital engagement, and churn exposure.</p>
+            <div class="metric-row">
+              <div class="mini-metric"><strong>120</strong><span>Customer profiles</span></div>
+              <div class="mini-metric"><strong>30%</strong><span>High-churn customers</span></div>
+              <div class="mini-metric"><strong>~IDR 1.4M</strong><span>Scenario net uplift</span></div>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="https://docs.google.com/spreadsheets/d/1brIySafrAYf65gOEvo84i_sH1qLOSnh7s9g8-duOuys/edit?usp=sharing" target="_blank" rel="noopener">Open Spreadsheet</a>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="meta">Independent portfolio · 2026</div>
+            <h3>UMKM Digital Banking Adoption Analysis</h3>
+            <p>Analyzed 100 simulated UMKM customer profiles to identify adoption status, access constraints, digital literacy, satisfaction, and adoption barriers.</p>
+            <div class="metric-row">
+              <div class="mini-metric"><strong>100</strong><span>Customer profiles</span></div>
+              <div class="mini-metric"><strong>30.0%</strong><span>Initial adoption rate</span></div>
+              <div class="mini-metric"><strong>~38.2%</strong><span>Projected pilot adoption</span></div>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="https://docs.google.com/spreadsheets/d/1JTCby-yF3z6m5UBhCK-q_G7JuY173-E_8wZ39RJTQ58/edit?usp=sharing" target="_blank" rel="noopener">Open Spreadsheet</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="grid-2" style="margin-top:18px;">
+          <article class="project-card">
+            <div class="meta">Product Management · Rakamin Academy</div>
+            <h3>Traveloka Customer Service Chatbot + Live Agent Integration</h3>
+            <p>Product case covering discovery, prioritization, PRD, OKRs, MVP planning, prototype thinking, roadmap, and go-to-market planning.</p>
+            <div class="tag-row">
+              <span class="tag">PRD</span><span class="tag">OKR</span><span class="tag">Roadmap</span><span class="tag">GTM</span>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="https://www.canva.com/design/DAGKFj0wjZM/mXs7uwP59xMH2BtdeFe5uw/view" target="_blank" rel="noopener">View PM Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="meta">Data Analysis · Binar Academy x PPKD Jakarta Barat</div>
+            <h3>Data Analyst Bootcamp Portfolio</h3>
+            <p>Training portfolio covering SQL querying, ERD design, ETL, Google BigQuery, spreadsheet analysis, and dashboard-oriented storytelling.</p>
+            <div class="tag-row">
+              <span class="tag">SQL</span><span class="tag">ERD</span><span class="tag">ETL</span><span class="tag">BigQuery</span>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="https://www.canva.com/design/DAGTyVsJsrI/lzaXNp34qxfwl8Xx8uheGA/view" target="_blank" rel="noopener">View Data Project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Professional experience</span>
+            <h2>Execution, stakeholder management, and analytical discipline</h2>
+          </div>
+          <p>
+            My experience shows a consistent pattern of taking ownership in complex environments: structuring ambiguous information, coordinating with diverse stakeholders, delivering under deadlines, and turning research into useful outputs.
+          </p>
+        </div>
+
+        <div class="experience-list">
+          <article class="experience-card">
+            <div class="role-time">Feb 2026 – Apr 2026</div>
+            <div>
+              <h3>Editorial Intern · Whiteboard Journal</h3>
+              <p>Analyzed audience trends and content performance data to support editorial planning across 5+ publishing cycles while coordinating with editorial, design, and marketing teams.</p>
+              <div class="tag-row"><span class="tag">Content analytics</span><span class="tag">Cross-functional coordination</span><span class="tag">Planning</span></div>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="role-time">Aug 2025 – Dec 2025</div>
+            <div>
+              <h3>Field Researcher · Ekspedisi Patriot, Kementerian Transmigrasi RI</h3>
+              <p>Conducted structured field research with 20+ government offices and community stakeholders, coded 100+ pages of interview transcripts and institutional documents, and produced policy-oriented reports.</p>
+              <div class="tag-row"><span class="tag">Stakeholder engagement</span><span class="tag">Field research</span><span class="tag">Policy insight</span></div>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="role-time">Jan 2025 – Jul 2025</div>
+            <div>
+              <h3>Founder & Head · FIB UI Anti Kekerasan Seksual</h3>
+              <p>Founded and led a 40+ member student organization, built a 5-division structure, mobilized 600+ student endorsements, and coordinated with 10+ internal/external stakeholders.</p>
+              <div class="tag-row"><span class="tag">Leadership</span><span class="tag">Organization building</span><span class="tag">Stakeholder management</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="documents">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Recruiter resources</span>
+            <h2>Supporting documents and project links</h2>
+          </div>
+          <p>
+            A centralized set of materials for recruitment review, including CV, certificates, English proficiency document, administrative file, and portfolio project evidence.
+          </p>
+        </div>
+
+        <div class="docs-grid">
+          <a class="doc-card" href="https://docs.google.com/document/d/1ScxM8Q7d5FvfgPhmMKEWf2h6f0_fBfltk3geoQnWIzc/edit?usp=sharing" target="_blank" rel="noopener">
+            <div><h3>CV</h3><p>Updated banking MDP profile, education, projects, experience, leadership, and skills.</p></div>
+            <span class="text-link">Open CV</span>
+          </a>
+          <a class="doc-card" href="https://drive.google.com/file/d/10GqCLSKOkaI3hbZTeDxeAJ6KOwOryNXb/view?usp=sharing" target="_blank" rel="noopener">
+            <div><h3>TOEFL ITP</h3><p>English proficiency supporting document for program applications.</p></div>
+            <span class="text-link">Open TOEFL</span>
+          </a>
+          <a class="doc-card" href="https://drive.google.com/file/d/1JgwUG-rRPSJP_qW9kvYTiIBdcySvse9h/view" target="_blank" rel="noopener">
+            <div><h3>Product Management Certificate</h3><p>Rakamin Academy certificate and PM training evidence.</p></div>
+            <span class="text-link">Open Certificate</span>
+          </a>
+          <a class="doc-card" href="https://drive.google.com/file/d/1wkU55gitLt9z_VAolB9FckQdFza-bbzr/view" target="_blank" rel="noopener">
+            <div><h3>Data Analyst Certificate</h3><p>Binar Academy x PPKD Jakarta Barat certificate and analytics training evidence.</p></div>
+            <span class="text-link">Open Certificate</span>
+          </a>
+          <a class="doc-card" href="https://drive.google.com/file/d/18q468k2QENNw8nGFPdOeABL46jU6xowg/view?usp=sharing" target="_blank" rel="noopener">
+            <div><h3>SKCK</h3><p>Administrative supporting document for recruitment requirements.</p></div>
+            <span class="text-link">Open SKCK</span>
+          </a>
+          <a class="doc-card" href="https://docs.google.com/spreadsheets/d/1bjs8WfGPRPcCmg6S4Csjpv3lIxv-phS96-D9vRsCNec/edit?usp=sharing" target="_blank" rel="noopener">
+            <div><h3>Project 1</h3><p>UMKM credit eligibility analysis spreadsheet.</p></div>
+            <span class="text-link">Open Project</span>
+          </a>
+          <a class="doc-card" href="https://docs.google.com/spreadsheets/d/1brIySafrAYf65gOEvo84i_sH1qLOSnh7s9g8-duOuys/edit?usp=sharing" target="_blank" rel="noopener">
+            <div><h3>Project 2</h3><p>UMKM customer segmentation and portfolio analytics spreadsheet.</p></div>
+            <span class="text-link">Open Project</span>
+          </a>
+          <a class="doc-card" href="https://docs.google.com/spreadsheets/d/1JTCby-yF3z6m5UBhCK-q_G7JuY173-E_8wZ39RJTQ58/edit?usp=sharing" target="_blank" rel="noopener">
+            <div><h3>Project 3</h3><p>UMKM digital banking adoption analysis spreadsheet.</p></div>
+            <span class="text-link">Open Project</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="quote-card">
+          <span class="eyebrow">Contact</span>
+          <h2>Ready to contribute, learn, and grow in banking.</h2>
+          <p>
+            I am prepared to bring analytical discipline, customer understanding, stakeholder communication, and strong execution ownership to a banking development program environment.
+          </p>
+          <div class="actions">
+            <a class="btn secondary" href="mailto:gloriasarahsaragih@gmail.com">Email Me</a>
+            <a class="btn secondary" href="https://linkedin.com/in/gloriasarah" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn secondary" href="https://linktr.ee/gloria.sarah" target="_blank" rel="noopener">Linktree</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Gloria Sarah Saragih</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
